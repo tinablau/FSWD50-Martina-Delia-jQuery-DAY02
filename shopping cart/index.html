@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shopping cart</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<style type="text/css" media="screen">
+
+	.product {
+		display: flex;
+		flex-wrap:wrap;
+	}
+
+	.item {
+		display:flex;
+		flex-direction: column;
+		margin-right: 40px;
+
+	}
+	
+	img {
+			width:100px;
+			height: 100px;
+		}
+	.btn, .btnd {
+		background-color: gray;
+		border: 1px solid gray;
+		width: 100px;
+		border-radius: 10px;
+		margin-bottom: 30px;
+	}
+
+	#flip {
+		background-color: gray;
+		height: 40px;
+		width: 200px;
+		text-align: center;
+		padding-top:20px;
+		border-radius: 10px;
+	}
+	</style>
+</head>
+<body>
+<h1>Products</h1>
+<div class="product">
+	
+</div>
+
+<div id="flip">Shopping cart</div>
+<div class="cart">
+	<ul>
+		<li></li>
+	</ul>
+
+</div>
+
+<div class="total">
+		
+</div>
+<div class="tax">
+		
+</div>
+<div class="shipping">
+		
+</div>
+<div class="discount">
+		
+</div>
+<div class="totalCart">
+		
+</div>
+
+
+
+
+
+
+
+
+
+<script src="list.json"></script>
+<script src="script.js"></script>
+</body>
+</html>

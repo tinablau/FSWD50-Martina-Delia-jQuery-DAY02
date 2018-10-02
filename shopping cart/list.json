@@ -1,0 +1,43 @@
+var grocery = [{
+   "name": "Milk",
+   "image": "https://ipro.com.gh/wp-content/uploads/2018/01/Peak-Milk-Low-Fat-1L.png",
+   "numberObject": 10,
+   "price": 3,
+   "count":1
+}, {
+   "name": "Orange juice",
+   "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlseKM_3fy3kuLujtDhXs1wW3uGdeAWi2Dlf_ErpwiaoxR38PG",
+   "numberObject": 1,
+   "price": 5,
+   "count":1 
+}, {
+   "name": "Cheese",
+   "image": "http://www.oakislandbutcher.com/wp-content/uploads/2017/02/Cheddar-Cheese-600x550.jpg",
+   "numberObject": 11,
+   "price": 5,
+   "count":1
+}, {
+   "name": "Lemon",
+   "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/766/images/lemon-uses-0-1494115921.jpg?resize=480:*",
+   "numberObject": 15,
+   "price": 2,
+   "count":1 
+}, {
+   "name": "Bread",
+   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Anadama_bread_%281%29.jpg/1200px-Anadama_bread_%281%29.jpg",
+   "numberObject": 20,
+   "price": 1,
+   "count":1 
+}, {
+   "name": "Banana",
+   "image": "https://www.newtimes.co.rw/sites/default/files/main/articles/2014/09/21/1411332526BB.jpg",
+   "numberObject": 4,
+   "price": 3,
+   "count":1 
+}, {
+   "name": "Coffee",
+   "image": "https://5.imimg.com/data5/WQ/JP/MY-10901605/coffee-packaging-bags-500x500.jpg",
+   "numberObject": 6,
+   "price": 8,
+   "count":1 
+}];
