@@ -76,7 +76,7 @@ $(document).ready(function(){
 	} 
 	
 
-	function shipping()	{
+	function shippingCost()	{
 		sum=sumItemCart();
 		if (sum > 80) {
 			var shipCost=6;
@@ -87,13 +87,13 @@ $(document).ready(function(){
 		return shipCost;
 	}
 
-	function tax() {
+	function taxCost() {
 		sum=sumItemCart();
 		var tax= sum*22/100;
 		return tax;
 	}
 
-	function discount() {
+	function discountGet() {
 		sum=sumItemCart();
 		if (sum<40) {
 			var disc=0;
@@ -106,7 +106,15 @@ $(document).ready(function(){
 		}
 		return disc;
 	}
+	function totalCartCost() {
+		sum=sumItemCart();
+		tax=taxCost();
+		shipping=shippingCost();
+		discount=discountGet();
+		var total= sum+tax+shipping-discount;
+		return total;
 
+	}
 
 	console.log(sumItemCart());
 
@@ -115,13 +123,14 @@ $(document).ready(function(){
 	function displayCart(){
 		var output="";
 		for(i=0; i<cart.length; i++) {
-			output+= "<li>" + cart[i].name + " Price: " +cart[i].price + "$ Count:" + cart[i].count +"</li>"
+			output+= "<li>" +cart[i].name + " Price: " +cart[i].price + "$ Count:" + cart[i].count +"</li>"
 		}
 		$(".cart").html(output);
 		$(".total").html("Total: " + sumItemCart() +" $ ");
-		$(".shipping").html("Shipping: " + shipping() +" $ ");
-		$(".tax").html("Tax Cost: " + tax() +" $ ");
-		$(".discount").html("Discount: " + discount() +" $ ")
+		$(".shipping").html("Shipping: " + shippingCost() +" $ ");
+		$(".tax").html("Tax Cost: " + taxCost() +" $ ");
+		$(".discount").html("Discount: " + discountGet() +" $ ");
+		$(".totalCart").html("Total Cost: " + totalCartCost() +" $ ")
 	}
 //-----Panel------//
 
