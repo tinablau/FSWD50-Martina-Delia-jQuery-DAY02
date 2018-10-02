@@ -32,22 +32,32 @@ $(document).ready(function(){
 	}
 
 //-----Increase Items from shopping cart------//
+function addItemCart(x){
+ 		var error = "false" 
+ 		
+ 		if (cart.length == 0){
+ 			item = new Item(grocery[x].name, grocery[x].price, grocery[x].count);
+ 			cart.push(item);
+ 			console.log(cart);
+ 		} else {
+ 			for (let i=0;i<cart.length; i++){
+ 				if (cart[i].name === grocery[x].name){
+ 					cart[i].count ++
+ 					error = "true"
+ 					return
+ 				}
+ 			}
+ 			 if(error == "false"){
+ 			} 
+ 			 
+ 				item = new Item(grocery[x].name, grocery[x].price, grocery[x].count);
+ 					cart.push(item);
+ 					console.log(cart);
+ 			}
+ 			}
+ 					
+ 		
 
-	function addItemCart(x){
-		
-			for (let i=0;i<cart.length; i++){
-				if (cart[i].name === grocery[x].name){
-					cart[i].count ++;
-					return
-				}
-			} 
-			 
-				item = new Item(grocery[x].name, grocery[x].price, grocery[x].count);
-					cart.push(item);
-					console.log(cart);
-					
-		
-		}
 //-----Decrease Items from shopping cart------//
 
 	function deleteItemCart(x){
